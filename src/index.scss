@@ -1,0 +1,81 @@
+@import 'aos/dist/aos.css';
+@import 'react-loading-skeleton/dist/skeleton.css';
+@import 'react-date-range/dist/styles.css';
+@import 'react-date-range/dist/theme/default.css';
+// @import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('./assets/font/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('./assets/font/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('./assets/font/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('./assets/font/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('./assets/font/Inter-SemiBold.ttf') format('truetype');
+}
+
+
+*, :after, :before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter-Regular';
+}
+
+body {
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+
+  li {
+    list-style: none;
+  }
+}
+
+.display-block {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.clicked {
+  
+    animation: click 300ms;
+    
+  
+    @keyframes click {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.86);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+}
